@@ -31,7 +31,9 @@ export default function UseEffectPage() {
     <div className="page-container">
       <h1 className="page-title">useEffect Hook</h1>
       <p className="page-description">
-        useEffect handles side effects in components like data fetching, subscriptions, or DOM manipulation. It runs after render.
+        useEffect handles side effects in components like data fetching, subscriptions, 
+        or DOM manipulation. It runs after render. The example below silumates fetching
+        student data from an API (fetches from mock data file) and filtering it based on selected grade.
       </p>
 
       <div className="example-container">

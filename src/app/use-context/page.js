@@ -26,7 +26,9 @@ function ThemeContent() {
     <div className="page-container">
       <h1 className="page-title">useContext Hook</h1>
       <p className="page-description">
-        useContext allows you to share data across the component tree without prop drilling. Perfect for themes, user data, or app-wide settings.
+        useContext allows you to share data across the component tree without prop drilling. 
+        Perfect for themes, user data, or app-wide settings. The example below demonstrates a that can 
+        be toggled between light and dark modes using context.
       </p>
 
       <div className="example-container" style={containerStyle}>

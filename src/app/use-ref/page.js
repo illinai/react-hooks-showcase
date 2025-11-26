@@ -50,7 +50,11 @@ export default function UseRefPage() {
     <div className="page-container">
       <h1 className="page-title">useRef Hook</h1>
       <p className="page-description">
-        useRef has two main uses: (1) accessing DOM elements directly, and (2) storing values that persist between renders without causing re-renders.
+        useRef has two main uses: (1) accessing DOM elements directly, and (2) 
+        storing values that persist between renders without causing re-renders. 
+        The examples below demonstrate both use cases. The first example auto-focuses
+        empty form fields upon submission. The second example tracks how many times 
+        the form was submitted using useRef, without triggering re-renders on each click.
       </p>
 
       <div className="example-container">
@@ -104,14 +108,14 @@ export default function UseRefPage() {
         </p>
         
         <p>Submissions tracked (with useRef): <strong>{clickCountRef.current}</strong></p>
-        <p>Times you clicked "Show Count": <strong>{submittedCount}</strong></p>
+        <p>Times you clicked "Submit Student": <strong>{submittedCount}</strong></p>
         
         <button onClick={showClickCount} style={buttonStyle}>
           Show Current Submission Count
         </button>
 
         <div style={{ marginTop: '1rem', padding: '1rem', backgroundColor: '#e3f2fd', borderRadius: '4px' }}>
-          <strong>💡 What's happening:</strong>
+          <strong>What's happening:</strong>
           <ul style={{ marginTop: '0.5rem', marginLeft: '1.5rem' }}>
             <li>Every time you submit the form, <code>clickCountRef.current</code> increases</li>
             <li>This doesn't cause the component to re-render</li>

@@ -56,7 +56,9 @@ export default function UseReducerPage() {
     <div className="page-container">
       <h1 className="page-title">useReducer Hook</h1>
       <p className="page-description">
-        useReducer is ideal for managing complex state logic with multiple actions. It's similar to Redux but built into React.
+        useReducer is ideal for managing complex state logic with multiple actions. 
+        It's similar to Redux but built into React. The example below simulates a lunch menu cart 
+        where you can add, remove, and clear items using useReducer.
       </p>
 
       <div className="example-container">

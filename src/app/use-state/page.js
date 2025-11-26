@@ -16,22 +16,28 @@ export default function UseStatePage() {
     <div className="page-container">
       <h1 className="page-title">useState Hook</h1>
       <p className="page-description">
-        useState allows you to add state to functional components. It returns a state value and a function to update it.
+        useState allows you to add state to functional components. It returns a 
+        state value and a function to update it. The examples below demonstrates two common use cases:
+      1) A simple counter that increments, decrements, and resets a number.
+      2) A form that captures and displays a student's name upon submission.
       </p>
+      
 
       <div className="example-container">
         <h2>Example 1: Counter</h2>
-        <p>Current count: <strong>{count}</strong></p>
-        <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem' }}>
-          <button onClick={() => setCount(count + 1)} style={buttonStyle}>
-            Increment
-          </button>
-          <button onClick={() => setCount(count - 1)} style={buttonStyle}>
-            Decrement
-          </button>
-          <button onClick={() => setCount(0)} style={buttonStyle}>
-            Reset
-          </button>
+        <div>
+          <p>Current count: <strong>{count}</strong></p>
+          <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem' }}>
+            <button onClick={() => setCount(count + 1)} style={buttonStyle}>
+              Increment
+            </button>
+            <button onClick={() => setCount(count - 1)} style={buttonStyle}>
+              Decrement
+            </button>
+            <button onClick={() => setCount(0)} style={buttonStyle}>
+              Reset
+            </button>
+          </div>
         </div>
       </div>
 
