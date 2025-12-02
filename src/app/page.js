@@ -3,7 +3,7 @@ export default function Home() {
     <div className="page-container">
       <h1 className="page-title">Welcome</h1>
       <p className="page-description">
-        This project demonstrates practical examples of the React hooks.
+        This project demonstrates practical examples of the 7 most used React hooks.
       </p>
       <div className="example-container">
         <h2>About This Project</h2>
